@@ -35,11 +35,11 @@ export class Animal {
     if (typeof value === 'boolean')
       this[hasTail] = value;
     else
-      console.log(`${valid} is an invalid value for hasTail`);
+      return `${valid} is an invalid value for hasTail`;
   }
 
   doEat () {
-    console.log(`I, ${this.name}, am eating, and that's why I'm an Animal!`);
+    return `I, ${this.name}, am eating, and that's why I'm an Animal!`;
   }
 }
 
@@ -60,7 +60,7 @@ export class TerrestrialAnimal extends Animal {
     if (typeof number === 'number')
       this[legs] = number;
     else
-      console.log(`${number} is an invalid value for number of legs`);
+      return `${number} is an invalid value for number of legs`;
   }
 
   get numOfEars () {
@@ -71,11 +71,11 @@ export class TerrestrialAnimal extends Animal {
     if (typeof number === 'number' && number < 3)
       this[ears] = number;
     else
-      console.log(`Common, ${number} is an invalid value for number of ears`);
+      return `Common, ${number} is an invalid value for number of ears`;
   }
 
   doWalk () {
-    console.log(`Wawu...${this.name} is walking`);
+    return `Wawu...${this.name} is walking`;
   }
 
 }
@@ -104,6 +104,6 @@ export class AquaticAnimal extends Animal {
   }
 
   doSwim (where) {
-    console.log(`I'm swimming in the ${where}`);
+    return `I'm swimming in the ${where}`;
   }
 }
