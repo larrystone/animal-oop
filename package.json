@@ -1,0 +1,33 @@
+{
+  "name": "animaloop",
+  "version": "1.0.0",
+  "description": "An OOP implementation by modelling the Animal object",
+  "main": "/app/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larrystone/animal-oop.git"
+  },
+  "author": "Lawal Lanre E.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larrystone/animal-oop/issues"
+  },
+  "homepage": "https://github.com/larrystone/animal-oop#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "oop",
+    "encapsulation"
+  ]
+}
