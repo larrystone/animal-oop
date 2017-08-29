@@ -1,8 +1,8 @@
 import { expect } from 'chai';
-import { animal } from '../app/index.js';
+import { Animal, TerrestrialAnimal, AquaticAnimal } from '../app/index.js';
 
-const dog = new animal('Bingo');
-describe("Animal class for dog", () => {
+const dog = new TerrestrialAnimal('Bingo');
+describe("Terrestrial Animal class for dog", () => {
     it(`should return 2 for dog.noOfEars()`, () => {
         expect(dog.numOfEars()).to.equal(2);
     });
